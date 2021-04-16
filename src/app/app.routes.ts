@@ -1,10 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
-import { ProductsComponent } from './components/products/products.component';
-import { HomeComponent } from './components/home/home.component';
-import { WhoComponent } from './components/who/who.component';
-import { CompanyComponent } from './components/company/company.component';
-import { LoginComponent } from './components/login/login.component';
-import { ContactComponent } from './components/contact/contact.component';
+
+import { HomeComponent, CompanyComponent, LoginComponent, ContactComponent, WhoComponent, ProductsComponent } from './components/nav-bar/nav-bar.module';
+
 
 const APP_ROUTES: Routes = [
   { path: 'home', component: HomeComponent},

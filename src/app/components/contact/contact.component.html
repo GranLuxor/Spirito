@@ -1,1 +1,13 @@
-<p>contact works!</p>
+<div class="col">
+    <h3>Contáctanos</h3>
+    <form (ngSubmit)="contactar()">
+        <input type="text" placeholder="Nombre" name="name" [(ngModel)]="contact.name"/>
+        <input type="tel" placeholder="Telefono" name="phone" [(ngModel)]="contact.phone"/>
+        <input type="email" placeholder="Email" name="email" [(ngModel)]="contact.email"/>
+        <input type="text" placeholder="Mensaje" name="message" [(ngModel)]="contact.message"/>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+<div>
+    <app-messages [data] = "contact"></app-messages>
+</div>
