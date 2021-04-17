@@ -1,13 +1,10 @@
-<div class="col">
-    <h3>Contáctanos</h3>
+<div class="form-group">
+    <h2>Contáctanos</h2>
     <form (ngSubmit)="contactar()">
-        <input type="text" placeholder="Nombre" name="name" [(ngModel)]="contact.name"/>
-        <input type="tel" placeholder="Teléfono" name="phone" [(ngModel)]="contact.phone"/>
-        <input type="email" placeholder="Email" name="email" [(ngModel)]="contact.email"/>
-        <input type="text" placeholder="Mensaje" name="message" [(ngModel)]="contact.message"/>
+        <input type="text" placeholder="Nombre" name="name" [(ngModel)]="contact.name" maxlength="40"/>
+        <input type="input" placeholder="Teléfono" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="10"/>
+        <input type="email" placeholder="Email" name="email" [(ngModel)]="contact.email" maxlength="40"/>
+        <input type="text" placeholder="Mensaje" name="message" [(ngModel)]="contact.message" maxlength="500" id="message"/>
         <button type="submit">Enviar</button>
     </form>
-</div>
-<div>
-    <app-messages [data] = "contact"></app-messages>
 </div>

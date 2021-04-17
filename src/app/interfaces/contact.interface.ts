@@ -1,6 +1,6 @@
 export interface Contact {
     name: string;
     email: string;
-    phone: number;
+    phone: string;
     message: string;
   }

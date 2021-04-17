@@ -10,7 +10,7 @@ export class ContactComponent {
   contact: Contact = {
     name: '',
     email: '',
-    phone: 0,
+    phone: '',
     message: ''
   }
 
