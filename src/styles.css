@@ -62,3 +62,84 @@
   #back{
     background-color: white;
   }
+
+
+  .results {
+    font-weight: 600
+}
+
+select {
+    border: none;
+    outline: none;
+    padding: 0px 4px;
+    cursor: pointer;
+    background: inherit
+}
+
+.card {
+    border: none;
+    cursor: pointer
+}
+
+.card:hover {
+    transform: scale(1.08);
+    transition: all 0.4s ease-in-out
+}
+
+img {
+    background-color: #fdf8f4;
+    width: 150px;
+    height: 220px;
+    object-fit: contain;
+    padding-top: 10px
+}
+
+.card-body {
+    padding: 0.5rem;
+    padding-top: 0.7rem;
+    padding-right: 0.2rem
+}
+
+.fa-heart {
+    font-size: 1.2rem
+}
+
+.h6 {
+    margin: 0
+}
+
+.btn {
+    padding-top: 0
+}
+
+.btn:hover {
+    color: #fdaa4b
+}
+
+div.text-muted {
+    font-size: 0.9rem
+}
+
+@media(max-width:372px) {
+    .results {
+        font-size: 0.9rem
+    }
+}
+
+@media(max-width:330px) {
+    .results {
+        font-size: 0.85rem
+    }
+}
+
+@media(min-height: 700px) {
+    body {
+        height: 100vh
+    }
+}
+
+@media(max-width:768px) {
+    body {
+        height: 100%
+    }
+}
