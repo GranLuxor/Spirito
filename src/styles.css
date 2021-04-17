@@ -1,31 +1,22 @@
-* {
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 200;
-  }
-  
-  html, body {
-    
+* html, body {
     background: white;
     margin: 20px;
-    color: #3e4144;
+    color: rgb(20, 5, 228);
     -webkit-font-smoothing: antialiased;
-  }
-  
-  
-  dd {
-    font-weight: bold;
+    height: 100%;
+    font-family: 'Russo One', sans-serif;
+ 
   }
   
   button {
     background-color: rgb(216, 252, 14);
-    font-weight: bold;
-    border-radius: 5px;
     border: 0px;
     color: rgb(20, 5, 228);
     cursor: pointer;
     margin-right: 5px;
     margin-left: 5px;
     padding: 5px 10px;
+    border-radius: 5px;
   }
   
   button:hover {
@@ -53,4 +44,21 @@
   input {
     display: block;
     margin: 5px;
+  }
+
+  .navbar {
+    background-color: rgb(216, 252, 14);
+  }
+  .nav-link, .navbar-brand {
+    color: rgb(20, 5, 228);
+  }
+
+  .nav-link:hover , .navbar-brand:hover {
+    color:rgb(20, 5, 228);
+    position: relative;
+    bottom: 2px;
+  }
+
+  #back{
+    background-color: white;
   }
