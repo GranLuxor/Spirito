@@ -1,7 +1,6 @@
 * html, body {
-    background: white;
+    background: #ffffff;
     margin: 20px;
-    color: rgb(20, 5, 228);
     -webkit-font-smoothing: antialiased;
     height: 100%;
     font-family: 'Russo One', sans-serif;
@@ -11,7 +10,7 @@
   button {
     background-color: rgb(216, 252, 14);
     border: 0px;
-    color: rgb(20, 5, 228);
+    color: #000000;
     cursor: pointer;
     margin-right: 5px;
     margin-left: 5px;
@@ -20,8 +19,8 @@
   }
   
   button:hover {
-    background-color: rgb(20, 5, 228);
-    color: rgb(216, 252, 14);
+    background-color: #0000d6;
+    color: #ffffff;
   }
   
   button:focus{ 
@@ -47,22 +46,27 @@
   }
 
   .navbar {
-    background-color: rgb(216, 252, 14);
+    background: #dff90c;
+    width: 100%;
   }
   .nav-link, .navbar-brand {
-    color: rgb(20, 5, 228);
+    color: #000000;
   }
 
   .nav-link:hover , .navbar-brand:hover {
-    color:rgb(20, 5, 228);
+    color:#0000d6;
     position: relative;
     bottom: 2px;
   }
 
   #back{
-    background-color: white;
+    background-color: #ffffff;
   }
 
+  #title{
+    background-color: #0000d6;
+    color: #ffffff;
+  }
 
   .results {
     font-weight: 600
