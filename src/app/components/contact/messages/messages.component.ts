@@ -10,7 +10,7 @@ export class MessagesComponent  {
   @Input() data: Contact = {
     name: '',
     email: '',
-    phone: 0,
+    phone: '',
     message: ''
   };
 }
