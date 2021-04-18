@@ -1,10 +1,35 @@
-<div class="form-group">
-    <h2>Contáctanos</h2>
-    <form (ngSubmit)="contactar()">
-        <input type="text" placeholder="Nombre" name="name" [(ngModel)]="contact.name" maxlength="40"/>
-        <input type="input" placeholder="Teléfono" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="10"/>
-        <input type="email" placeholder="Email" name="email" [(ngModel)]="contact.email" maxlength="40"/>
-        <input type="text" placeholder="Mensaje" name="message" [(ngModel)]="contact.message" maxlength="500" id="message"/>
-        <button type="submit">Enviar</button>
-    </form>
+<div class="holder">
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()" id="contact-form">
+
+    <h3 class="text-center">Contáctanos</h3>
+    <span class="text-muted">Los campos con * son obligatorios</span>
+    <!-- Name -->
+    <input type="text" formControlName="contactFormName" id="defaultContactFormName" mdbInput
+      class="form-control mb-4" placeholder="Nombre* Apellido*">
+  
+    <!-- Email -->
+    <input type="email" formControlName="contactFormEmail" id="defaultContactFormEmail" mdbInput
+      class="form-control mb-4" placeholder="E-mail*">
+  
+    <!-- Subject -->
+    <div>
+      <span class="text-muted">Asunto</span>
+    </div>
+    <select formControlName="contactFormSubjects" class="browser-default custom-select mb-4">
+      <option value="0" selected>Me interesa comprar plantillas</option>
+      <option value="1">Estoy interesado en solicitar diseño</option>
+      <option value="2">Otro</option>
+    </select>
+  
+    <!-- Message -->
+    <div class="form-group">
+      <textarea formControlName="contactFormMessage" class="form-control rounded-0" mdbInput id="exampleFormControlTextarea2"
+        rows="3" placeholder="Mensaje*"></textarea>
+    </div>
+  
+    <!-- Send button -->
+    <button mdbBtn color="info" outline="true" block="true" class="z-depth-0 my-4 waves-effect"
+      mdbWavesEffect type="submit" [disabled]="disabledSubmitButton">Enviar</button>
+</form>
 </div>
+  <!-- Default form contact -->
