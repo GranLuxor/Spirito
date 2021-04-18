@@ -100,8 +100,7 @@ a {
   background-image: linear-gradient(#dff90c,  #ffff5a);
   text-align: center;
   color: #000;
-  overflow-x: hidden;
-  min-height: 500px;
+  min-height: 600px;
   height: auto !important;
 }
 
@@ -174,4 +173,8 @@ form {
   height: 100%;
   margin-top: 0%;
   margin-bottom: 0%;
+}
+
+p {
+  max-width: 100%;
 }
