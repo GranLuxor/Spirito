@@ -2,12 +2,16 @@
     -webkit-font-smoothing: antialiased;
     height: 100%;
     font-family: 'Russo One', sans-serif;
+    --main-bg-color: #fff3e0;
+    --secondary-bg-color: #fff8e1;
+    --third-bg-color: #ffffff;
+    --font-bg-color: #484848;
   }
   
   button {
-    background-color: #f0f4c3;
+    background-color: var(--main-bg-color);
     border: 0px;
-    color: #000000;
+    color: var(--font-bg-color);
     cursor: pointer;
     margin-right: 5px;
     margin-left: 5px;
@@ -16,8 +20,8 @@
   }
   
   button:hover {
-    background-color: #bdc192;
-    color: #000000;
+    background-color: var(--secondary-bg-color);
+    color: var(--font-bg-color);
     position: relative;
     bottom: 5px;
   }
@@ -32,24 +36,18 @@
   }
 
   .navbar {
-    background: #bdc192;
+    background: var(--main-bg-color);
     width: 100%;
     margin-top: 0%;
     padding: 0%;
   }
   .nav-link {
-    color: #000000;
-  }
-
-  .nav-link:hover {
-    color:#000000;
-    position: relative;
-    bottom: 2px;
+    color: var(--font-bg-color);
   }
 
   #title{
-    background: #bdc192;
-    color: #000000;
+    background: var(--main-bg-color);
+    color: #8bc34a;
     min-height: 100px;
     margin-bottom: 0%;
     padding-top: 30px;
@@ -82,13 +80,13 @@ img {
 }
 
 a:hover {
-  color:#000000;
+  color: var(--font-bg-color);
   position: relative;
   bottom: 2px;
 }
 
 a {
-  color:#000000;
+  color: var(--font-bg-color);
 }
 
 #contact-form {
@@ -96,9 +94,9 @@ a {
 }
 
 .holder{ 
-  background-image: linear-gradient(#f0f4c3,  #fffff6);
+  background-image: linear-gradient(var(--secondary-bg-color),  var(--third-bg-color));
   text-align: center;
-  color: #000;
+  color: var(--font-bg-color);
   min-height: 600px;
   height: auto !important;
 }
@@ -110,19 +108,19 @@ form {
 .lightbox-gallery {
  
   background-repeat: no-repeat;
-  color: #000;
+  color: var(--font-bg-color);
   overflow-x: hidden
 }
 
 .lightbox-gallery p {
-  color: #000000
+  color: var(--font-bg-color);
 }
 
 .lightbox-gallery h2 {
   font-weight: bold;
   margin-bottom: 40px;
   padding-top: 40px;
-  color: #000000
+  color: var(--font-bg-color);
 }
 
 @media (max-width:767px) {
@@ -152,21 +150,23 @@ form {
 }
 
 #socialnavbar {
-  background-image: linear-gradient(#bdc192,  #f0f4c3);
+  background-image: linear-gradient(var(--main-bg-color), var(--secondary-bg-color));
   min-height: 100px;
   margin-top: 0%;
   margin-bottom: 0%;
+  color: #0000d6;
 }
 
 #bottombar {
   text-align: center;
-  background: #fffff6;
+  background: var(--third-bg-color);
   min-height: 200px;
   height: auto !important;
+  color:#484848;
 }
 
 #maincontainer {
-  background-image: linear-gradient(#f0f4c3,  #fffff6);
+  background-image: linear-gradient(var(--secondary-bg-color), var(--third-bg-color));
   min-height: 600px;
   height: auto !important;
   height: 100%;
