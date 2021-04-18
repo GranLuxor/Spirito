@@ -66,7 +66,7 @@
 }
 
 img {
-    background-color: #dff90c;
+    background-color: #000000;
     object-fit: contain;
     padding: 10px
 }
@@ -79,6 +79,8 @@ img {
 
 .social {
   padding: 5px;
+  list-style-type: none;
+
 }
 
 a:hover {
@@ -96,4 +98,16 @@ a {
   margin: 5px;
   height: 200px;
   width: 400px; 
+}
+
+#contact-form {
+  max-width: 600px;
+}
+
+.holder{ 
+  text-align: center;
+}
+
+form {
+  display: inline-block;
 }

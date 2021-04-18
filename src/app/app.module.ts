@@ -1,4 +1,6 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -14,9 +16,12 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    APP_ROUTING
+    APP_ROUTING,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    FormBuilder 
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
