@@ -1,14 +1,12 @@
 * html, body {
-    background: #ffffff;
-    margin-top: 20px;
+    background: #ffff5a;
     -webkit-font-smoothing: antialiased;
     height: 100%;
     font-family: 'Russo One', sans-serif;
- 
   }
   
   button {
-    background-color: rgb(216, 252, 14);
+    background-color: #dff90c;
     border: 0px;
     color: #000000;
     cursor: pointer;
@@ -19,8 +17,10 @@
   }
   
   button:hover {
-    background-color: #0000d6;
-    color: #ffffff;
+    background-color: #a9c600;
+    color: #000000;
+    position: relative;
+    bottom: 5px;
   }
   
   button:focus{ 
@@ -33,10 +33,12 @@
   }
 
   .navbar {
-    background: #dff90c;
+    background: #c1da04;
     width: 100%;
+    margin-top: 0%;
+    padding: 0%;
   }
-  .nav-link, .navbar-brand {
+  .nav-link {
     color: #000000;
   }
 
@@ -47,13 +49,12 @@
   }
 
   #title{
-    background-color: #0000d6;
-    color: #ffffff;
+    background: #c1da04;
+    color: #000000;
+    min-height: 100px;
+    margin-bottom: 0%;
+    padding-top: 30px;
   }
-
-  .results {
-    font-weight: 600
-}
 
 .card {
     border: none;
@@ -66,9 +67,7 @@
 }
 
 img {
-    background-color: #000000;
     object-fit: contain;
-    padding: 10px
 }
 
 .card-body {
@@ -93,21 +92,86 @@ a {
   color:#000000;
 }
 
-#message { 
-  display: ruby-text-container;
-  margin: 5px;
-  height: 200px;
-  width: 400px; 
-}
-
 #contact-form {
   max-width: 600px;
 }
 
 .holder{ 
+  background-image: linear-gradient(#dff90c,  #ffff5a);
   text-align: center;
+  color: #000;
+  overflow-x: hidden;
+  min-height: 500px;
+  height: auto !important;
 }
 
 form {
   display: inline-block;
+}
+
+.lightbox-gallery {
+  background-image: linear-gradient(#dff90c,  #ffff5a);
+  background-repeat: no-repeat;
+  color: #000;
+  overflow-x: hidden
+}
+
+.lightbox-gallery p {
+  color: #000000
+}
+
+.lightbox-gallery h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: #000000
+}
+
+@media (max-width:767px) {
+  .lightbox-gallery h2 {
+      margin-bottom: 25px;
+      padding-top: 25px;
+      font-size: 24px
+  }
+}
+
+.lightbox-gallery .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 40px
+}
+
+.lightbox-gallery .intro p {
+  margin-bottom: 0
+}
+
+.lightbox-gallery .photos {
+  padding-bottom: 20px
+}
+
+.lightbox-gallery .item {
+  padding-bottom: 30px
+}
+
+#socialnavbar {
+  background-image: linear-gradient(#c1da04,  #dff90c);
+  min-height: 100px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+#bottombar {
+  text-align: center;
+  background: #ffff5a;
+  min-height: 200px;
+  height: auto !important;
+}
+
+#maincontainer {
+  background-image: linear-gradient(#dff90c,  #ffff5a);
+  min-height: 600px;
+  height: auto !important;
+  height: 100%;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }

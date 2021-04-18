@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-who',
-  templateUrl: './who.component.html',
-  styleUrls: ['./who.component.css']
+  templateUrl: './who.component.html'
 })
 export class WhoComponent implements OnInit {
 

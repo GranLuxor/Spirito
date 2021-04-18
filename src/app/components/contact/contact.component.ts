@@ -4,8 +4,7 @@ import { ConnectionService } from 'src/app/services/connection.service';
 
 @Component({
   selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  templateUrl: './contact.component.html'
 })
 export class ContactComponent {
   contactForm: FormGroup;
