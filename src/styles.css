@@ -310,7 +310,7 @@ form {
   top: 0;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 58em) {
   .header li {
     float: left;
   }
