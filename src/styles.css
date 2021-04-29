@@ -94,7 +94,6 @@ img {
 a:hover {
   color: var(--font-bg-color);
   position: relative;
-  bottom: 2px;
 }
 
 a {
@@ -188,7 +187,7 @@ form {
 
 #insoles {
   margin: auto;
-  padding-top: 100px;
+  padding-top: 10px;
 
 }
 
